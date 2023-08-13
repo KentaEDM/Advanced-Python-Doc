@@ -1,0 +1,23 @@
+swagger: '2.0'
+tags:
+  - name: Cleaning Text
+info:
+  title: 'API Documentation for Data Processing and Modeling'
+  description: 'Dokumentasi API untuk data processing dan modelling'
+  version: '1.0.0'
+
+paths:
+  /text-clean:
+    post:
+      summary: 'Endpoint to clean text'
+      parameters:
+        - name: text
+          in: query
+          type: string
+          required: true
+          description: 'Text to be cleaned'
+      responses:
+        '200':
+          description: 'Successful response'
+        '400':
+          description: 'Bad Request'
